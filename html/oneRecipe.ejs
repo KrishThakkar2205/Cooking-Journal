@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= recipe.title %> | Cooking Journal</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CookSphere</title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <%- include('header')%>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mt-4">
+                <!-- Recipe Image -->
+                <img src="<%= recipe.images %>" class="img-fluid rounded mb-4" alt="<%= recipe.title %>">
+                
+                <!-- Recipe Title -->
+                <h1 class="display-4"><%= recipe.title %></h1>
+                
+                <!-- Recipe Description -->
+                <p class="lead"><%= recipe.description %></p>
+                
+                <!-- Ingredients Section -->
+                
+                
+                <!-- Instructions Section -->
+                <h3>Instructions</h3>
+              
+                <div  class="recipe-description"><%= recipe.instructions %></div>
+                
+                
+            </div>
+
+            <!-- Sidebar for Recipe Info -->
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe Details</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Cuisine Type:</strong> <%= recipe.cuisineType %></li>
+                            <li class="list-group-item"><strong>Serving SIze:</strong> <%= recipe.servingSize %></li>
+                            <!-- <li class="list-group-item"><strong>Servings:</strong> <%= recipe.servings %></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <a href="/recipes" class="btn btn-primary mt-4 mb-2">Back to Recipes</a>
+            </div>
+        </div>
+    </div>
+    <%- include('footer')%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>

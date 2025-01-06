@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Features</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="/css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+     <%- include('header.ejs')%>
+      <!-- recent section start --> 
+      <div class="about_section layout_padding">
+         <div class="container">
+           <!-- For loop Remaining -->
+            <% for(let i = 0; i<recipes.length; i++){ %>
+
+               <div class="card mb-3" style="max-width: 100%;">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="<%= recipes[i].images%>" class="img-fluid rounded-start" alt="Card Image">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title"><%= recipes[i].title%></h5>
+                              <p class="card-text"><%= recipes[i].description%></p>
+                              <a href="/recipe?id=<%= recipes[i]._id%>" class="btn btn-primary">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+               <% } %>
+               </div>
+               
+               <div class="pagination">
+                  <% if (current > 1) { %>
+                      <a href="?page=<%= current - 1 %>">Previous</a>
+                  <% } %>
+              
+                  <% for (var i = 1; i <= pages; i++) { %>
+                      <a href="?page=<%= i %>" class="<%= current == i ? 'active' : '' %>"><%= i %></a>
+                  <% } %>
+              
+                  <% if (current < pages) { %>
+                      <a href="?page=<%= current + 1 %>">Next</a>
+                  <% } %>
+              </div>
+         </div>
+      </div>
+      <!-- recent section end --> 
+      <!-- footer section start -->
+      <%- include('footer.ejs')%>
+      <!-- footer section end -->
+      
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>

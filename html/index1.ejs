@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>CookSphere</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      
+      <!-- header section start -->
+         <%- include('header.ejs') %>
+         <br>
+         
+         
+         
+         <!-- banner section start --> 
+         <div class="container-fluid">
+           
+            <div class="banner_section layout_padding">
+              
+               <h1 class="banner_taital">welcome To <br>CookSphere</h1>
+               <div id="my_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="image_main">
+                           <div class="container">
+                              <img src="images/banner-carousel-1.jpg" class="image_1">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="image_main">
+                           <div class="container">
+                              <img src="images/banner-carousel-2.jpg" class="image_1">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="image_main">
+                           <div class="container">
+                              <img src="images/banner-carousel-3.jpg" class="image_1">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end --> 
+      </div>
+      <!-- header section end --> 
+      <h1 class="banner_title">Latest Recipe</h1>
+      <!-- about section start --> 
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-sm-12">
+                  <div class="about_img"><img src="images/56b105f61800006f0080b1f1.jpeg"></div>
+                  <!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
+                  <p class="post_text">Post By : 09/06/2019</p>
+                  <h2 class="most_text">French fries (North American English & British English), <br> chips (British and other national varieties)</h2>
+                  <p class="lorem_text">The standard method for cooking french fries is deep frying, which submerges them in hot fat, nowadays most commonly oil. Vacuum fryers produce potato chips with lower oil content, while maintaining their colour and texture.</p>
+                  <div class="social_icon_main">
+                     <div class="social_icon">
+                        <!-- <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul> -->
+                     </div>
+                     <div class="read_bt"><a href="/recipes">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="image_5"><img src="images/img-8.avif"></div>
+                  <h1 class="about_taital">Spaghetti</h1>
+                  <p class="about_text">Spaghetti (Italian: [spaɡetti]) is a long, thin, solid, cylindrical pasta.[1] It is a staple food of traditional Italian cuisine.</p>
+                  <div class="read_bt_1"><a href="/recipes">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end --> 
+      <!-- blog section start --> 
+      <div class="about_section layout_padding mb-3">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-sm-12">
+                  <div class="about_img"><img src="/images/img-8.jpg"></div>
+                  <!-- <div class="like_icon"><img src="images/like-icon.png"></div> -->
+                  <p class="post_text">Post By : 09/06/2019</p>
+                  <h2 class="most_text">Noodles are a type of food made from unleavened dough which is either rolled flat and cut, stretched, or extruded, into long strips or strings</h2>
+                  <p class="lorem_text"> Noodles are a staple food in many cultures and made into a variety of shapes. The most common noodles are those derived from either Chinese cuisine or Italian cuisine. Chinese noodles are known by a variety of different names, while Italian noodles are known as pasta.</p>
+                  <div class="social_icon_main">
+                     <div class="social_icon">
+                        <!-- <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul> -->
+                     </div>
+                     <div class="read_bt"><a href="/recipes">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="about_main">
+                     <h1 class="follow_text">CONNECT & FOLLOW</h1>
+                     <div class="follow_icon">
+                        <ul>
+                           <li><a href="#"><img src="images/fb-icon-1.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon-1.png"></a></li>
+                           <li><a href="#"><img src="images/linkedin-icon-1.png"></a></li>
+                           <li><a href="#"><img src="images/instagram-icon-1.png"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog section end --> 
+      <!-- newsletter section start --> 
+      
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <%- include('./footer')%>
+      <!-- footer section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>

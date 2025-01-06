@@ -1,0 +1,53 @@
+<div class="header_section">
+         <div class="container-fluid header_main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="logo" href="/"><img src="/images/logo.png"/></a>
+               <span class="search-container">
+                  <form action="/search" method="GET" class="search-box">
+                    <input type="text" placeholder="Search recipes..." name="searchterm"/>
+                    <button type="submit">Search</button>
+                  </form>
+                </span>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               
+              
+               <div class="collapse navbar-collapse mr-3" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/recipes">Recipe</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/addrecipe">Add Recipe</a>
+                     </li>
+                     <% if(welcomeMsg){ %>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                     </li>
+                     <% }else{ %>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/LoginSignup">Login/SignUp</a>
+                     </li>
+                     <% } %>
+                  </ul>
+               </div>
+               <span class="search-container1">
+                  <form action="/search" method="GET" class="search-box1">
+                    <input type="text" placeholder="Search recipes..." name="searchterm"/>
+                    <button type="submit">Search</button>
+                  </form>
+                </span>
+               
+            </nav>
+            
+         </div>
+         <% if(welcomeMsg ){%>
+            <div class="alert alert-success" role="alert">
+                <h4><%= welcomeMsg %></h4>
+            </div>
+        <%}%>
+</div>
